@@ -426,7 +426,7 @@ class Call(PyTgCalls):
                 # theme = await check_theme(chat_id)
                 img = await gen_thumb(videoid)
                 button = stream_markup(_, videoid, chat_id)
-                await mystic.delete()
+                #await mystic.delete()
                 run = await app.send_photo(
                     original_chat_id,
                     photo=img,

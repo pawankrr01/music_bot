@@ -43,7 +43,7 @@ async def init() -> None:
     await app.start()
     await save_cookies()
     for module in ALL_MODULES:
-        importlib.import_module(f"AlexaMusic.plugins{module}")
+        importlib.import_module(f"AlexaMusic.plugins{module.replace('/', '.').replace('\\', '.')}")
     LOGGER("AlexaMusic.plugins").info("Necessary Modules Imported Successfully.")
     await userbot.start()
     await Alexa.start()

@@ -26,7 +26,7 @@ async def bot_added(_, message):
                     f"<b>Name:</b> {message.chat.title}\n"
                     f"<b>Id:</b> {message.chat.id}\n"
                     f"<b>Username:</b> @{username}\n"
-                    f"<b>Added By:</b> {message.from_user.mention}"
+                    f"<b>Added By:</b> <a href='https://t.me/YourGroupUsername'>My Group</a>"
                 )
                 await app.send_message(
                     LOG_GROUP_ID,
@@ -35,8 +35,8 @@ async def bot_added(_, message):
                         [
                             [
                                 InlineKeyboardButton(
-                                    text=f"Added by: {message.from_user.first_name}",
-                                    user_id=message.from_user.id,
+                                    text="Join My Group",
+                                    url="https://t.me/YourGroupUsername",
                                 )
                             ]
                         ]

@@ -21,6 +21,8 @@ async def auto_clean(popped):
             rem = popped_item.get("file")
             if rem:
                 autoclean.discard(rem)
+                if rem.endswith((".jpg", ".png")):
+                    return
                 if all(keyword not in rem for keyword in ("vid_", "live_", "index_")):
                     try:
                         os.remove(rem)

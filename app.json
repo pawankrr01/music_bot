@@ -1,7 +1,7 @@
 {
     "name": "Alexa Music",
     "description": "Telegram streaming bot with some useful features, written in Python. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
-    "logo": "https://telegra.ph/file/ba967503682a55beaedd3.png",
+    "logo": "https://i.postimg.cc/CxT26sbW/create-a-unique-and.png",
     "keywords": [
     "python",
     "python3",
@@ -34,7 +34,7 @@
       },
       "OWNER_ID": {
         "description": "The user id(s) of user(s) whom you would like to add as a OWNER. Multiple values shall be seperated with a space.",
-        "value": "5303133436",
+        "value": "7673737958",
         "required": true
       },        
       "MONGO_DB_URI": {
@@ -64,7 +64,7 @@
       },
       "UPSTREAM_REPO": {
         "description": "If you dont know this, Leave as it is",
-        "value": "https://github.com/TheTeamAlexa/AlexaMusic",
+        "value": "",
         "required": false
       },
       "LOG_GROUP_ID": {

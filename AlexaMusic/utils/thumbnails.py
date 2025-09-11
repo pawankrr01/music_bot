@@ -89,7 +89,7 @@ async def gen_thumb(videoid):
         name_font = ImageFont.truetype("assets/font.ttf", 30)
         para = textwrap.wrap(title, width=30)
         j = 0
-        draw.text((5, 5), "Alexa MusicBot", fill="white", font=name_font)
+        draw.text((5, 5), "Jarvis MusicBot", fill="white", font=name_font)
         draw.text(
             (600, 150),
             "NOW PLAYING",
@@ -131,7 +131,7 @@ async def gen_thumb(videoid):
             (255, 255, 255),
             font=arial,
         )
-        draw.text((600, 550), "Owner : Jankari Ki Duniya", (255, 255, 255), font=arial)
+        draw.text((600, 550), "Owner : Jarvis(@i_luv_bot)", (255, 255, 255), font=arial)
         try:
             os.remove(f"cache/thumb{videoid}.png")
         except Exception:
@@ -200,7 +200,7 @@ async def gen_qthumb(videoid):
         name_font = ImageFont.truetype("assets/font.ttf", 30)
         para = textwrap.wrap(title, width=30)
         j = 0
-        draw.text((5, 5), "Alexa MusicBot", fill="white", font=name_font)
+        draw.text((5, 5), "Jarvis MusicBot", fill="white", font=name_font)
         draw.text(
             (600, 150),
             "ADDED THIS SONG IN QUEUE",
@@ -242,7 +242,7 @@ async def gen_qthumb(videoid):
             (255, 255, 255),
             font=arial,
         )
-        draw.text((600, 550), "Owner : Jankari Ki Duniya", (255, 255, 255), font=arial)
+        draw.text((600, 550), "Owner : Jarvis(@i_luv_bot)", (255, 255, 255), font=arial)
         try:
             os.remove(f"cache/thumb{videoid}.png")
         except Exception:

@@ -18,7 +18,6 @@ requests
 speedtest-cli
 spotipy
 unidecode
-uvloop
 werkzeug
 yt-dlp
 https://github.com/KurimuzonAkuma/pyrogram/archive/dev.zip
