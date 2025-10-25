@@ -1,6 +1,6 @@
 # This code is written by (C) TheTeamAlexa bot will send message to log group when someone add
 # this bot to new group make sure to star all projects
-# Copyright (C) 2021-2025 by Alexa_Help@ Github, < TheTeamAlexa >.
+# Copyright (C) 2021-2025 by i_luv_bot@ Github, < TheTeamAlexa >.
 # All rights reserved. © Alexa © Yukki
 
 from pyrogram import filters

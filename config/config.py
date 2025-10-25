@@ -1,9 +1,9 @@
-# Copyright (C) 2021-2022 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
+# Copyright (C) 2021-2022 by i_luv_bot @ Github, < https://github.com/pawankrr01 >
 # Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
 
 """
 Alexa is a Telegram Audio and video streaming bot
-Copyright (c) 2021 ~ Present Team Alexa <https://github.com/TheTeamAlexa>
+Copyright (c) 2021 ~ Present Team Alexa <https://github.com/pawankrr01>
 
 This program is free software: you can redistribute it and can modify
 as you want.

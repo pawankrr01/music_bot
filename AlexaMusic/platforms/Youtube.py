@@ -1,9 +1,9 @@
-# Copyright (C) 2025 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
+# Copyright (C) 2025 by i_luv_bot @ Github, < https://github.com/pawankrr01 >
 # Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
 
 """
 TheTeamAlexa is a project of Telegram bots with variety of purposes.
-Copyright (c) 2021 ~ Present Team Alexa <https://github.com/TheTeamAlexa>
+Copyright (c) 2021 ~ Present Team Alexa <https://github.com/pawankrr01>
 
 This program is free software: you can redistribute it and can modify
 as you want or you can collabe if you have new ideas.
@@ -258,32 +258,77 @@ class YouTubeAPI:
         loop = asyncio.get_running_loop()
 
         def audio_dl():
-            ydl_optssx = {
-                "cookiefile": cookiefile(),
+            try:
+        # Attempt direct audio-only download
+                ydl_optssx = {
                 "format": "bestaudio[ext=m4a]/bestaudio/best",
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "http_headers": {
+                    "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G975F)"
+                },
+                "extractor_args": {
+                    "youtube": ["player_client=web"]
+                }
             }
-            with YoutubeDL(ydl_optssx) as x:
-                info = x.extract_info(link, False)
-                xyz = os.path.join("downloads", f"{info['id']}.{info['ext']}")
-                if os.path.exists(xyz):
+                with YoutubeDL(ydl_optssx) as x:
+                    info = x.extract_info(link, False)
+                    xyz = os.path.join("downloads", f"{info['id']}.{info['ext']}")
+                    if os.path.exists(xyz):
+                        return xyz
+                    x.download([link])
                     return xyz
-                x.download([link])
-                return xyz
+
+            except Exception as e:
+                print(f"[Fallback Triggered] Direct audio failed: {e}")
+        # Fallback to video download + audio extraction
+                fallback_opts = {
+                    "format": "18/22/best[ext=mp4]",
+                    "outtmpl": "downloads/%(id)s.%(ext)s",
+                    "geo_bypass": True,
+                    "nocheckcertificate": True,
+                    "quiet": True,
+                    "no_warnings": True,
+                    "prefer_ffmpeg": True,
+                    "postprocessors": [
+                        {
+                            "key": "FFmpegExtractAudio",
+                            "preferredcodec": "mp3",
+                            "preferredquality": "192",
+                        }
+                    ],
+                    "http_headers": {
+                        "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G975F)"
+                    },
+                    "extractor_args": {
+                        "youtube": ["player_client=web"]
+                    }
+                }
+                with YoutubeDL(ydl_optssx) as x:
+                    info = x.extract_info(link, False)
+                    xyz = os.path.join("downloads", f"{info['id']}.mp3")
+                    if os.path.exists(xyz):
+                        return xyz
+                    x.download([link])
+                    return xyz
 
         def video_dl():
             ydl_optssx = {
-                "cookiefile": cookiefile(),
-                "format": "bestvideo[ext=mp4][height<=1080]+bestaudio[ext=m4a]/best[ext=mp4][height<=1080]",
+                "format": "bestvideo[ext=mp4][height<=720]" ,
                 "outtmpl": "downloads/%(id)s.%(ext)s",
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
+                "http_headers": {
+                    "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G975F)"
+                },
+                "extractor_args": {
+                    "youtube": ["player_client=web"]
+                }
             }
             with YoutubeDL(ydl_optssx) as x:
                 info = x.extract_info(link, False)
@@ -297,41 +342,82 @@ class YouTubeAPI:
             formats = f"{format_id}+140"
             fpath = f"downloads/{title}"
             ydl_optssx = {
-                "format": formats,
+                "format": "best[ext=mp4][height<=720]",
                 "outtmpl": fpath,
                 "geo_bypass": True,
                 "nocheckcertificate": True,
                 "quiet": True,
                 "no_warnings": True,
-                "cookiefile": cookiefile(),
                 "prefer_ffmpeg": True,
                 "merge_output_format": "mp4",
+                "http_headers": {
+                    "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G975F)"
+                },
+                "extractor_args": {
+                    "youtube": ["player_client=web"]
+                }
             }
             x = YoutubeDL(ydl_optssx)
             x.download([link])
 
         def song_audio_dl():
             fpath = f"downloads/{title}.%(ext)s"
-            ydl_optssx = {
-                "format": format_id,
-                "outtmpl": fpath,
-                "geo_bypass": True,
-                "nocheckcertificate": True,
-                "quiet": True,
-                "no_warnings": True,
-                "cookiefile": cookiefile(),
-                "prefer_ffmpeg": True,
-                "postprocessors": [
-                    {
-                        "key": "FFmpegExtractAudio",
-                        "preferredcodec": "mp3",
-                        "preferredquality": "192",
+            try:
+        # Attempt direct audio-only download
+                ydl_optssx = {
+                    "format": "bestaudio[ext=m4a]/bestaudio/best",
+                    "outtmpl": fpath,
+                    "geo_bypass": True,
+                    "nocheckcertificate": True,
+                    "quiet": True,
+                    "no_warnings": True,
+                    "prefer_ffmpeg": True,
+                    "postprocessors": [
+                        {
+                            "key": "FFmpegExtractAudio",
+                            "preferredcodec": "mp3",
+                            "preferredquality": "192",
+                        }
+                    ],
+                    "http_headers": {
+                        "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G975F)"
+                    },
+                    "extractor_args": {
+                        "youtube": ["player_client=web"]
                     }
-                ],
-            }
-            x = YoutubeDL(ydl_optssx)
-            x.download([link])
+                }
+                x = YoutubeDL(ydl_optssx)
+                x.download([link])
+                return f"downloads/{title}.m4a"
 
+            except Exception as e:
+                print(f"[Fallback Triggered] Direct audio failed: {e}")
+                # Fallback to video download + audio extraction
+                fallback_opts = {
+                        "format": "18/22/best[ext=mp4]",
+                        "outtmpl": fpath,
+                        "geo_bypass": True,
+                        "nocheckcertificate": True,
+                        "quiet": True,
+                        "no_warnings": True,
+                        "prefer_ffmpeg": True,
+                        "postprocessors": [
+                            {
+                                "key": "FFmpegExtractAudio",
+                                "preferredcodec": "mp3",
+                                "preferredquality": "192",
+                            }
+                        ],
+                        "http_headers": {
+                            "User-Agent": "Mozilla/5.0 (Linux; Android 10; SM-G975F)"
+                        },
+                        "extractor_args": {
+                            "youtube": ["player_client=web"]
+                        }
+                }
+                x = YoutubeDL(ydl_optssx)
+                x.download([link])
+                return f"downloads/{title}.mp3"
         if songvideo:
             await loop.run_in_executor(None, song_video_dl)
             fpath = f"downloads/{title}.mp4"

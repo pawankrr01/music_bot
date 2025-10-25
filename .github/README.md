@@ -11,10 +11,10 @@
 </p>
 <br>
 <p align="center">
-    <a href="https://github.com/TheTeamAlexa/AlexaMusic"> <img src="https://img.shields.io/github/repo-size/TheTeamAlexa/AlexaMusic?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/TheTeamAlexa/AlexaMusic/commits"> <img src="https://img.shields.io/github/last-commit/TheTeamAlexa/AlexaMusic?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/TheTeamAlexa/AlexaMusic/issues"> <img src="https://img.shields.io/github/issues/TheTeamAlexa/AlexaMusic?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
-    <a href="https://github.com/TheTeamAlexa/AlexaMusic/network/members"> <img src="https://img.shields.io/github/forks/TheTeamAlexa/AlexaMusic?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
+    <a href="https://github.com/pawankrr01/AlexaMusic"> <img src="https://img.shields.io/github/repo-size/TheTeamAlexa/AlexaMusic?color=orange&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/pawankrr01/AlexaMusic/commits"> <img src="https://img.shields.io/github/last-commit/TheTeamAlexa/AlexaMusic?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/pawankrr01/AlexaMusic/issues"> <img src="https://img.shields.io/github/issues/TheTeamAlexa/AlexaMusic?color=blueviolet&logo=github&logoColor=green&style=for-the-badge" /></a>
+    <a href="https://github.com/pawankrr01/AlexaMusic/network/members"> <img src="https://img.shields.io/github/forks/TheTeamAlexa/AlexaMusic?color=red&logo=github&logoColor=green&style=for-the-badge" /></a>  
     <a href="https://pypi.org/project/Pyrogram"> <img src="https://img.shields.io/pypi/v/Kurigram?color=yellow&label=Pyrogram&logo=python&logoColor=green&style=for-the-badge" /></a>
 </p>
 
@@ -25,7 +25,7 @@
 >
 >### <h3><b>If you're facing issues with YouTube blocking ips or signing in, follow this simple fix:</b></h3>
 >
->• **Join the Support Group**: Type `#cookies` in our [sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](https://t.me/Alexa_Help) to receive the necessary extension link.
+>• **Join the Support Group**: Type `#cookies` in our [sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ](https://t.me/i_luv_bot) to receive the necessary extension link.
 >
 >• **Generate Cookies**: Download [Firefox](www.mozilla.org/en-US/firefox) and login in to Youtube <b>(Use a fake account for safety)</b>. Run the provided extension on Firefox to generate cookies.
 >
@@ -114,7 +114,7 @@ Through this repository, we hope to share our passion for music and innovation w
 - [ᴛᴇʟᴇɢʀᴀᴍ ᴀᴘɪ ᴋᴇʏ](https://docs.pyrogram.org/intro/setup#api-keys)
 - [ᴛᴇʟᴇɢʀᴀᴍ ʙᴏᴛ ᴛᴏᴋᴇɴ](https://t.me/botfather)
 - [ᴍᴏɴɢᴏᴅʙ URI](https://telegra.ph/How-To-get-Mongodb-URI-04-06)
-- [sᴛʀɪɴɢ sᴇssɪᴏɴ](https://github.com/TheTeamAlexa/AlexaMusic/blob/master/genstring.py)
+- [sᴛʀɪɴɢ sᴇssɪᴏɴ](https://github.com/pawankrr01/AlexaMusic/blob/master/genstring.py)
 
 <summary><b>sᴛʀɪɴɢ sᴇssɪᴏɴ</b></summary>
 <br>
@@ -126,7 +126,7 @@ Through this repository, we hope to share our passion for music and innovation w
 <p><a href="https://replit.com/@AssadAli/String-Session-Generator"><img src="https://img.shields.io/badge/Generate%20On%20Repl-blueviolet?style=for-the-badge&logo=appveyor" width="200"/></a></p>
 
 <h4> ɢᴇɴᴇʀᴀᴛᴇ sᴇssɪᴏɴ ᴠɪᴀ ᴛᴇʟᴇɢʀᴀᴍ sᴛʀɪɴɢ-ɢᴇɴ ʙᴏᴛ: </h4>    
-<p><a href="https://github.com/TheTeamAlexa/AlexaMusic/blob/master/genstring.py"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200"/></a></p>
+<p><a href="https://github.com/pawankrr01/AlexaMusic/blob/master/genstring.py"><img src="https://img.shields.io/badge/TG%20String%20Gen%20Bot-blueviolet?style=for-the-badge&logo=appveyor" width="200"/></a></p>
 <br>
 
 ### 💻 ᴀʟᴇxᴀ ᴍᴜsɪᴄ ᴅᴇᴘʟᴏʏᴍᴇɴᴛ ɢᴜɪᴅᴇ ᴏɴ ʟᴏᴄᴀʟ sᴇʀᴠᴇʀ ᴏʀ ᴠᴘs 🗄️
@@ -153,7 +153,7 @@ sudo pip3 install -U pip
 
 **4. Clone the Repository**
 ```bash
-git clone https://github.com/TheTeamAlexa/AlexaMusic && cd AlexaMusic
+git clone https://github.com/pawankrr01/AlexaMusic && cd AlexaMusic
 ```
 
 **5. Install Python Requirements**
@@ -209,7 +209,7 @@ sudo pip3 install -U pip
 
 **4. Clone the Repository**
 ```bash
-git clone https://github.com/TheTeamAlexa/AlexaMusic && cd AlexaMusic
+git clone https://github.com/pawankrr01/AlexaMusic && cd AlexaMusic
 ```
 
 **5. Install Python Requirements (Ubuntu 24 specific)**
@@ -251,7 +251,7 @@ bash start
 
 <br>
 
-<p><a href="https://my.scalingo.com/deploy?template=https://github.com/TheTeamAlexa/AlexaMusic"> <img src="https://cdn.scalingo.com/deploy/button.svg" width="220" height="38.45"/></a></p>
+<p><a href="https://my.scalingo.com/deploy?template=https://github.com/pawankrr01/AlexaMusic"> <img src="https://cdn.scalingo.com/deploy/button.svg" width="220" height="38.45"/></a></p>
 
 
 <summary><b>ᴅᴇᴘʟᴏʏ ᴛᴏ ʜᴇʀᴏᴋᴜ</b></summary>
@@ -262,7 +262,7 @@ bash start
 > ᴛʜᴏsᴇ ᴛᴡᴏ ᴠᴀʀs ᴀʀᴇ ɴᴏᴛ ᴍᴀɴᴅᴀᴛᴏʀʏ, ʏᴏᴜ ᴄᴀɴ ʟᴇᴀᴠᴇ ᴛʜᴇᴍ ʙʟᴀɴᴋ ᴛᴏᴏ.
 <br>
 <h4> ᴄʟɪᴄᴋ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟᴏᴡ ᴛᴏ ᴅᴇᴘʟᴏʏ ᴀʟᴇxᴀ ᴏɴ ʜᴇʀᴏᴋᴜ</h4>    
-<p><a href="http://dashboard.heroku.com/new?template=https://github.com/TheTeamAlexa/AlexaMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a></p>
+<p><a href="http://dashboard.heroku.com/new?template=https://github.com/pawankrr01/AlexaMusic"><img src="https://img.shields.io/badge/Deploy%20To%20Heroku-red?style=for-the-badge&logo=heroku" width="200"/></a></p>
 
 <br>
 
@@ -270,7 +270,7 @@ bash start
 
 <br>
 
-<p><a href="https://render.com/deploy?repo=github.com/TheTeamAlexa/AlexaMusic"> <img src="https://img.shields.io/badge/Deploy%20to-Render-blue?style=for-the-badge&logo=render" width="220" height="33"/></a></p>
+<p><a href="https://render.com/deploy?repo=github.com/pawankrr01/AlexaMusic"> <img src="https://img.shields.io/badge/Deploy%20to-Render-blue?style=for-the-badge&logo=render" width="220" height="33"/></a></p>
 
 <br>
 
@@ -278,7 +278,7 @@ bash start
 
 <br>
 
-<p><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/TheTeamAlexa/AlexaMusic"> <img src="https://www.koyeb.com/static/images/deploy/button.svg"/></a></p>
+<p><a href="https://app.koyeb.com/deploy?type=git&repository=github.com/pawankrr01/AlexaMusic"> <img src="https://www.koyeb.com/static/images/deploy/button.svg"/></a></p>
 
 <br>
 
@@ -312,10 +312,10 @@ bash start
 <br>
 
 # ❤️ Support<
-<a href="https://t.me/Alexa_BotUpdates"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
-<a href="https://t.me/Shayri_Music_Lovers"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
-<a href="https://t.me/Give_Me_Heart"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
-<a href="https://t.me/Alexa_Help"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
+<a href="https://t.me/i_luv_bot"><img src="https://img.shields.io/badge/Join-Telegram%20Channel-red.svg?logo=Telegram"></a>
+<a href="https://t.me/i_luv_bot"><img src="https://img.shields.io/badge/Join-Telegram%20Group-blue.svg?logo=telegram"></a>
+<a href="https://t.me/i_luv_bot"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
+<a href="https://t.me/i_luv_bot"><img src="https://img.shields.io/badge/Give-Me%20Heart-blue.svg?logo=telegram"></a>
 
 </details>
 

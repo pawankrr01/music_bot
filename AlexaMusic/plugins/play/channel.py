@@ -1,9 +1,9 @@
-# Copyright (C) 2025 by Alexa_Help @ Github, < https://github.com/TheTeamAlexa >
+# Copyright (C) 2025 by i_luv_bot @ Github, < https://github.com/pawankrr01 >
 # Subscribe On YT < Jankari Ki Duniya >. All rights reserved. © Alexa © Yukki.
 
 """
 TheTeamAlexa is a project of Telegram bots with a variety of purposes.
-Copyright (c) 2021 ~ Present Team Alexa <https://github.com/TheTeamAlexa>
+Copyright (c) 2021 ~ Present Team Alexa <https://github.com/pawankrr01>
 
 This program is free software: you can redistribute it and can modify
 as you want or you can collab if you have new ideas.
